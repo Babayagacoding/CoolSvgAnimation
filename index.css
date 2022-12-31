@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+}
+main {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+#MainSvg {
+  width: 600px;
+  height: 600px;
+}
+/* Animation For Moon*/
+#MainSvg:hover #moonLight {
+  animation: moonMovement 30s linear;
+  animation-delay: 4s;
+  transform-origin: bottom;
+}
+@keyframes moonMovement {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(40deg);
+  }
+  50% {
+    transform: rotateZ(80deg);
+  }
+  75% {
+    transform: rotateZ(120deg);
+  }
+  100% {
+    transform: rotateZ(160deg);
+  }
+}
+/* Animation for stars */
+#stars {
+  position: absolute;
+  z-index: 10;
+}
+/* Animation for Birds */
+#pack_birds {
+  transform: translateX(100px);
+}
+#MainSvg:hover #pack_birds {
+  animation: birdsMovement 8s linear;
+  transform-origin: center;
+  animation-fill-mode: forwards;
+}
+@keyframes birdsMovement {
+  0% {
+    transform: translateX(100px);
+  }
+  50% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(-500px);
+  }
+}
+#MainSvg:hover #Vector_19 {
+  animation: dogears 1s ease-in infinite;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+@keyframes dogears {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(40deg);
+  }
+}
+#MainSvg:hover #uuid-b26c39a4-6f50-479a-8ec8-74191e458edf-262 {
+  animation: rightArm 2s linear;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+#MainSvg:hover #uuid-54f431d9-8f52-4369-9c0b-5619dfe5d050-261 {
+  animation: leftArm 2s linear;
+  transform-origin: right;
+  transform-box: fill-box;
+  animation-fill-mode: forwards;
+}
+@keyframes leftArm {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(50deg);
+  }
+  100% {
+    transform: rotateZ(90deg);
+  }
+}
+@keyframes rightArm {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(40deg);
+  }
+}
+ś #MainSvg:hover #dogtail {
+  animation: wagging 2s ease-in infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes wagging {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(30deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+/* Animation for sun */
+#MainSvg:hover #sun {
+  animation: sunmovement 8s linear;
+  transform-origin: bottom;
+  animation-fill-mode: forwards;
+}
+@keyframes sunmovement {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(40deg);
+  }
+  100% {
+    transform: rotateZ(80deg);
+  }
+}
+#sleepingIcon {
+  transform: translateX(90px) translateY(10px);
+}
